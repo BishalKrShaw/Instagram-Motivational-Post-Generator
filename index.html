@@ -33,8 +33,38 @@
 
         <!-- MAIN START -->
         <main>
-            <div class="row" id="workingArea"></div>
-            <div class="row" id="finalProductArea"></div>
+
+            <!-- WORK AREA START  -->
+            <div class="row" id="workingArea">
+                <div id="nameDiv">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div id="userNameDiv">
+                    <label for="userName">User Name</label>
+                    <input type="text" id="userName" placeholder="Enter username">
+                </div>
+                <div id="contentDiv">
+                    <label for="content">Content</label>
+                    <textarea id="content" cols="30" rows="10" placeholder="Generate or write your own content"></textarea>
+                </div>
+                <button class="generateQuotesBtn" id="hindiQuoteBtn">Generate Hindi Quote</button>
+                <button class="generateQuotesBtn" id="englishQuoteBtn">Generate English Quote</button>
+            </div>
+            <!-- WORK AREA END -->
+
+            <!-- FINAL PRODUCT AREA START -->
+            <div class="row" id="finalProductArea">
+                <div id="finalPost">
+                    <h3>Bishal Shaw</h3>
+                    <p>@bishalshaw</p>
+                    <div id="quote">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque accusantium id modi aliquid culpa repellendus perferendis earum animi laudantium at!</p>
+                    </div>
+                </div>
+                <button id="downloadBtn">Download</button>
+            </div>
+            <!-- FINAL PRODUCT AREA END -->
         </main>
         <!-- MAIN END -->
 
