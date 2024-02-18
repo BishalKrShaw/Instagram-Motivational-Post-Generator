@@ -61,5 +61,6 @@ inputFile.addEventListener("change", ()=>{
 // Delete Image
 // const deleteIcon = document.querySelector("#imageDelete");
 // deleteIcon.addEventListener("click", ()=>{
-//     profilePic.src = 
+//     profilePic.src = URL.createObjectURL(profilePic);
+//     console.log(profilePic);
 // });

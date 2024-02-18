@@ -107,7 +107,7 @@ main .row #profilePicDiv #profileImg #imageInput label{
     position: absolute;
     width: 100%;
     height: 20px;
-    background-color: var(--secondary-color);
+    background-color: rgba(211, 216, 222, 0.8);
     bottom: 0;
     text-align: center;
     cursor: pointer;
