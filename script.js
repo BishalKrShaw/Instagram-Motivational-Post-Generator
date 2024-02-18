@@ -47,3 +47,5 @@ async function generateHinQuote(url) {
 hindiQuoteBtn.addEventListener("click", ()=>{
     generateHinQuote(hindi_api_url);
 });
+
+// Upload Image Workings

@@ -69,7 +69,7 @@ main .row{
 }
 
 /* WORKING AREA START  */
-main .row #nameDiv, main .row #userNameDiv, main .row #contentDiv{
+main .row #nameDiv, main .row #userNameDiv, main .row #contentDiv, main .row #profilePicDiv{
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -77,6 +77,47 @@ main .row #nameDiv, main .row #userNameDiv, main .row #contentDiv{
 
 main #workingArea label{
     font-weight: 500;
+}
+
+main .row #profilePicDiv #profileImg{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+main .row #profilePicDiv #profileImg #imageInput{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+main .row #profilePicDiv #profileImg #imageInput img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+main .row #profilePicDiv #profileImg #imageInput label{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: var(--dark-secondary-color);
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .row #profilePicDiv #profileImg #imageInput input{
+    display: none;
+}
+
+main .row #profilePicDiv #profileImg #imageDelete{
+    cursor: pointer;
 }
 
 main #workingArea input, main #workingArea textarea{
