@@ -96,6 +96,7 @@ main .row #profilePicDiv #profileImg #imageInput{
 }
 
 main .row #profilePicDiv #profileImg #imageInput img{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -106,7 +107,7 @@ main .row #profilePicDiv #profileImg #imageInput label{
     position: absolute;
     width: 100%;
     height: 20px;
-    background-color: var(--dark-secondary-color);
+    background-color: var(--secondary-color);
     bottom: 0;
     text-align: center;
     cursor: pointer;
@@ -188,7 +189,27 @@ main #finalProductArea #finalPost h3{
     color: var(--white-color);
 }
 
-main #finalProductArea #finalPost>p{
+main #finalProductArea #finalPost .picNameDiv{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main #finalProductArea #finalPost .picNameDiv #postProfilePic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main #finalProductArea #finalPost .picNameDiv #postProfilePic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+main #finalProductArea #finalPost .picNameDiv #postProfileName p{
     color: var(--dark-secondary-color);
     font-size: 0.9rem;
     font-style: italic;

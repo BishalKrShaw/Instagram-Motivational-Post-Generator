@@ -49,3 +49,17 @@ hindiQuoteBtn.addEventListener("click", ()=>{
 });
 
 // Upload Image Workings
+const profilePic = document.querySelector("#imageInput img");
+const inputFile = document.querySelector("#uploadImage");
+const postProfilePic = document.querySelector("#postProfilePic img");
+
+inputFile.addEventListener("change", ()=>{
+    profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    postProfilePic.src = URL.createObjectURL(inputFile.files[0]);
+});
+
+// Delete Image
+// const deleteIcon = document.querySelector("#imageDelete");
+// deleteIcon.addEventListener("click", ()=>{
+//     profilePic.src = 
+// });
