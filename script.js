@@ -55,12 +55,13 @@ const postProfilePic = document.querySelector("#postProfilePic img");
 
 inputFile.addEventListener("change", ()=>{
     profilePic.src = URL.createObjectURL(inputFile.files[0]);
-    postProfilePic.src = URL.createObjectURL(inputFile.files[0]);
+    postProfilePic.src = profilePic.src;
+    // postProfilePic.src = URL.createObjectURL(inputFile.files[0]);
 });
 
 // Delete Image
-// const deleteIcon = document.querySelector("#imageDelete");
-// deleteIcon.addEventListener("click", ()=>{
-//     profilePic.src = URL.createObjectURL(profilePic);
-//     console.log(profilePic);
-// });
+const deleteIcon = document.querySelector("#imageDelete span");
+deleteIcon.addEventListener("click", ()=>{
+    profilePic.src = `./Images/defaultImage.png`;
+    postProfilePic.src = profilePic.src;
+});
