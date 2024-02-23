@@ -56,7 +56,6 @@ const postProfilePic = document.querySelector("#postProfilePic img");
 inputFile.addEventListener("change", ()=>{
     profilePic.src = URL.createObjectURL(inputFile.files[0]);
     postProfilePic.src = profilePic.src;
-    // postProfilePic.src = URL.createObjectURL(inputFile.files[0]);
 });
 
 // Delete Image
@@ -64,4 +63,15 @@ const deleteIcon = document.querySelector("#imageDelete span");
 deleteIcon.addEventListener("click", ()=>{
     profilePic.src = `./Images/defaultImage.png`;
     postProfilePic.src = profilePic.src;
+});
+
+// Download Feature
+const post = document.querySelector("#finalPost");
+const downloadBtn = document.querySelector("#downloadBtn");
+
+downloadBtn.addEventListener("click", ()=>{
+    domtoimage.toBlob(post)
+        .then(function(blob) {
+        window.saveAs(blob, 'myPost.png');
+    });
 });
